@@ -28,7 +28,9 @@ Run and bind also the **.ssh** directory to share your SSH key with the containe
 
 ## Important notes
 
-Make sure your host user you will use to run the container will have the correct `guid`. Alternatively you can modify the Dockerfile and change the `guid` of the `jenkins` user inside the container.  
+Make sure your host user you will use to run the container will have the correct `guid`.
+
+Alternatively you can modify the Dockerfile and change the `guid` of the `jenkins` user inside the container.  
 
 Modify this line:
 
