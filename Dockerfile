@@ -11,6 +11,11 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN usermod -u 1011 jenkins \
 	&& groupmod -g 1011 jenkins
 
+#============================================
+# UTILS
+#============================================
+RUN apt-get update \
+	&& apt-get install jq
 
 #============================================
 # Google Chrome
@@ -37,3 +42,4 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
 #============================================
 RUN apt-get update \
     && apt-get install -y -q xvfb
+
